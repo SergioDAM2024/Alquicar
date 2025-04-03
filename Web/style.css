@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.filtros {
+    margin-bottom: 1rem;
+}
+
+.lista-vehiculos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vehiculo {
+    border: 1px solid #ccc;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px;
+}
+
+.vehiculo img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Evita espacios adicionales debajo de la imagen */
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+.vehiculo h3 {
+    margin-top: 0.5rem;
+}
+
+.filtros label {
+    margin-right: 0.5rem;
+}
+
+.filtros select {
+    padding: 0.25rem;
+}

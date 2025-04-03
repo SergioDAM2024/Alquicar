@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlquiCar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AlquiCar</h1>
+        <nav>
+            <ul>
+                <li><a href="#disponibles">Vehículos Disponibles</a></li>
+                <li><a href="#alquilados">Vehículos Alquilados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="disponibles">
+            <h2>Vehículos Disponibles</h2>
+            <div class="filtros">
+                <label for="tipo-disponibles">Filtrar por tipo:</label>
+                <select id="tipo-disponibles">
+                    <option value="todos">Todos</option>
+                    <option value="coche">Coche</option>
+                    <option value="moto">Moto</option>
+                    <option value="furgoneta">Furgoneta</option>
+                </select>
+            </div>
+            <div class="lista-vehiculos">
+                <div class="vehiculo coche">
+                    <img src="SeatPanda.jpg" alt="Coche 1">
+                    <h3>Seat Panda</h3>
+                    <p>Precio: 25€/día</p>
+                </div>
+                <div class="vehiculo moto">
+                    <img src="vespino.jpeg" alt="Moto 1">
+                    <h3>Vespino clásica</h3>
+                    <p>Precio: 10€/día</p>
+                </div>
+                 <div class="vehiculo furgoneta">
+                    <img src="c15.png" alt="Furgoneta 1">
+                    <h3>C15 Clásica</h3>
+                    <p>Precio: 40€/día</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="alquilados">
+            <h2>Vehículos Alquilados</h2>
+            <div class="filtros">
+                <label for="tipo-alquilados">Filtrar por tipo:</label>
+                <select id="tipo-alquilados">
+                    <option value="todos">Todos</option>
+                    <option value="coche">Coche</option>
+                    <option value="moto">Moto</option>
+                    <option value="furgoneta">Furgoneta</option>
+                </select>
+            </div>
+            <div class="lista-vehiculos">
+                <div class="vehiculo coche">
+                    <img src="seat-leon.png" alt="Coche 2">
+                    <h3>Seat León</h3>
+                    <p>Cliente: Lorenzo Del Pozo</p>
+                    <p>Fecha de alquiler: 01-03-2025</p>
+                </div>
+                 <div class="vehiculo furgoneta">
+                    <img src="kangoo.jpeg" alt="Furgoneta 2">
+                    <h3>Renault Kangoo</h3>
+                    <p>Cliente: Amanda Cerler</p>
+                    <p>Fecha de alquiler: 04-05-2025</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 AlquiCar</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
