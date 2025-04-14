@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_yRhMUBIoEfCdNYgeEr9BLw" name="AlquiCar">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_yRhMUBIoEfCdNYgeEr9BLw" name="AlquiCar">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_yTXmcBIoEfCdNYgeEr9BLw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
@@ -118,4 +118,36 @@
     <message xmi:type="uml:Message" xmi:id="_WOZmMBIwEfCdNYgeEr9BLw" name="Confirmación alquiler" messageSort="asynchCall" receiveEvent="_WOaNQBIwEfCdNYgeEr9BLw" sendEvent="_WOZmMRIwEfCdNYgeEr9BLw"/>
     <message xmi:type="uml:Message" xmi:id="_YFC-wBIwEfCdNYgeEr9BLw" name="Mostrar Confirmación" messageSort="asynchCall" receiveEvent="_YFDl0RIwEfCdNYgeEr9BLw" sendEvent="_YFDl0BIwEfCdNYgeEr9BLw"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_k_ZTIBSSEfCpQYK2BHextQ" name="Administrador"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_wTRbIBSSEfCpQYK2BHextQ" name="Empleado"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_znAcwBSSEfCpQYK2BHextQ" name="Gestionar empleados"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_1XBB0BSSEfCpQYK2BHextQ" name="Gestionar Vehículos"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_4DAG8BSSEfCpQYK2BHextQ" name="Alquilar vehículos"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_6oHIABSSEfCpQYK2BHextQ" name="Iniciar sesión"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_-gUvsBSSEfCpQYK2BHextQ" name="Eliminación de empleado"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_A61qUBSTEfCpQYK2BHextQ" name="Modificación de empleado"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_HZUJoBSTEfCpQYK2BHextQ" name="Alta de empleado"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MeBZoBSTEfCpQYK2BHextQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NdtVABSTEfCpQYK2BHextQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_OdqWIBSTEfCpQYK2BHextQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_QSFhIBSTEfCpQYK2BHextQ" name="Requiere" client="_znAcwBSSEfCpQYK2BHextQ" supplier="_6oHIABSSEfCpQYK2BHextQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_X_TEcBSTEfCpQYK2BHextQ" memberEnd="_X_USkBSTEfCpQYK2BHextQ _X_VgsBSTEfCpQYK2BHextQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_X_TrgBSTEfCpQYK2BHextQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_X_TrgRSTEfCpQYK2BHextQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_X_USkBSTEfCpQYK2BHextQ" name="gestionar empleados" type="_znAcwBSSEfCpQYK2BHextQ" association="_X_TEcBSTEfCpQYK2BHextQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_X_VgsBSTEfCpQYK2BHextQ" name="administrador" type="_k_ZTIBSSEfCpQYK2BHextQ" association="_X_TEcBSTEfCpQYK2BHextQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aCo1MBSTEfCpQYK2BHextQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eF52UBSTEfCpQYK2BHextQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_feKpwBSTEfCpQYK2BHextQ" name="Registrar Mantenimiento"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_jKoUcBSTEfCpQYK2BHextQ" name="Eliminación de vehículo"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_mZonEBSTEfCpQYK2BHextQ" name="Modificación de vehículo"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pR-tMBSTEfCpQYK2BHextQ" name="Alta de vehículo"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_tHZfkBSTEfCpQYK2BHextQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_t0LtEBSTEfCpQYK2BHextQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ukoSkBSTEfCpQYK2BHextQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_vpJqoBSTEfCpQYK2BHextQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_x2hhIBSTEfCpQYK2BHextQ" name="Requiere" client="_aCo1MBSTEfCpQYK2BHextQ" supplier="_6oHIABSSEfCpQYK2BHextQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_3JeBcBSTEfCpQYK2BHextQ" name="Requiere" client="_4DAG8BSSEfCpQYK2BHextQ" supplier="_6oHIABSSEfCpQYK2BHextQ"/>
 </uml:Model>
