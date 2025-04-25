@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AlquiCar</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>AlquiCar</h1>
         <nav>
             <ul>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#disponibles">Vehículos Disponibles</a></li>
                 <li><a href="#alquilados">Vehículos Alquilados</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#formulario">Formulario</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>AlquiCar es una empresa dedicada al alquiler de vehículos clásicos e históricos.</p>
+            <h3>Últimas noticias</h3>
+            
+            <p><a href="#">https://www.coches.net/noticias/t/actualidad/</a></p>
+        
+            </div>
+            </div>
+        </section>
+
         <section id="disponibles">
             <h2>Vehículos Disponibles</h2>
             <div class="filtros">
@@ -29,23 +44,10 @@
                     <option value="furgoneta">Furgoneta</option>
                 </select>
             </div>
-            <div class="lista-vehiculos">
-                <div class="vehiculo coche">
-                    <img src="SeatPanda.jpg" alt="Coche 1">
-                    <h3>Seat Panda</h3>
-                    <p>Precio: 25€/día</p>
+            <div id="lista-disponibles" class="lista-vehiculos">
                 </div>
-                <div class="vehiculo moto">
-                    <img src="vespino.jpeg" alt="Moto 1">
-                    <h3>Vespino clásica</h3>
-                    <p>Precio: 10€/día</p>
+            <div id="paginacion-disponibles" class="pagination">
                 </div>
-                 <div class="vehiculo furgoneta">
-                    <img src="c15.png" alt="Furgoneta 1">
-                    <h3>C15 Clásica</h3>
-                    <p>Precio: 40€/día</p>
-                </div>
-            </div>
         </section>
 
         <section id="alquilados">
@@ -59,26 +61,62 @@
                     <option value="furgoneta">Furgoneta</option>
                 </select>
             </div>
-            <div class="lista-vehiculos">
-                <div class="vehiculo coche">
-                    <img src="seat-leon.png" alt="Coche 2">
-                    <h3>Seat León</h3>
-                    <p>Cliente: Lorenzo Del Pozo</p>
-                    <p>Fecha de alquiler: 01-03-2025</p>
+            <div id="lista-alquilados" class="lista-vehiculos">
                 </div>
-                 <div class="vehiculo furgoneta">
-                    <img src="kangoo.jpeg" alt="Furgoneta 2">
-                    <h3>Renault Kangoo</h3>
-                    <p>Cliente: Amanda Cerler</p>
-                    <p>Fecha de alquiler: 04-05-2025</p>
+            <div id="paginacion-alquilados" class="pagination">
                 </div>
-            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+            <h3>Datos de contacto</h3>
+            <ul>
+                <li>Teléfono: +34 976 666 666</li>
+                <li>Email: info@alquicar.es</li>
+            </ul>
+        </section>
+
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>Visítanos en nuestra oficina:</p>
+            <p>Calle Jacinto Benavente, 3, 5006 Zaragoza, Aragón</p>
+            <p><a href="https://www.google.com/maps?q=Calle+Jacinto+Bnavente+6+Zaragoza" target="_blank">Ver en Google Maps</a></p>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulario de Contacto</h2>
+            <form id="miFormulario">
+                <div class="formulario-grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <div class="error-mensaje" id="error-nombre"></div>
+                </div>
+                <div class="formulario-grupo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-mensaje" id="error-email"></div>
+                </div>
+                <div class="formulario-grupo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <div class="error-mensaje" id="error-mensaje"></div>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+                <div id="mensaje-enviado" style="display:none; color: green; margin-top: 10px;">Mensaje enviado correctamente.</div>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 AlquiCar</p>
+        <p>© 2025 AlquiCar</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/Fichas.js"></script>
+    <script src="js/Disponibles.js"></script>
+    <script src="js/Alquilados.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="js/script_principal.js"></script>
+
 </body>
 </html>
+
