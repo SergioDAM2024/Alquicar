@@ -1,0 +1,6 @@
+projectKey=AlquiCar
+serverUrl=http://localhost:9000
+serverVersion=25.2.0.102705
+dashboardUrl=http://localhost:9000/dashboard?id=AlquiCar
+ceTaskId=e5d60ae2-41c4-45b3-9caf-0a234caea93b
+ceTaskUrl=http://localhost:9000/api/ce/task?id=e5d60ae2-41c4-45b3-9caf-0a234caea93b

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlquiCar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>AlquiCar</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#disponibles">Vehículos Disponibles</a></li>
+                <li><a href="#alquilados">Vehículos Alquilados</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>AlquiCar es una empresa dedicada al alquiler de vehículos clásicos e históricos.</p>
+            <h3>Últimas noticias</h3>
+            
+            <p><a href="#">https://www.coches.net/noticias/t/actualidad/</a></p>
+        
+            </div>
+            </div>
+        </section>
+
+        <section id="disponibles">
+            <h2>Vehículos Disponibles</h2>
+            <div class="filtros">
+                <label for="tipo-disponibles">Filtrar por tipo:</label>
+                <select id="tipo-disponibles">
+                    <option value="todos">Todos</option>
+                    <option value="coche">Coche</option>
+                    <option value="moto">Moto</option>
+                    <option value="furgoneta">Furgoneta</option>
+                </select>
+            </div>
+            <div id="lista-disponibles" class="lista-vehiculos">
+                </div>
+            <div id="paginacion-disponibles" class="pagination">
+                </div>
+        </section>
+
+        <section id="alquilados">
+            <h2>Vehículos Alquilados</h2>
+            <div class="filtros">
+                <label for="tipo-alquilados">Filtrar por tipo:</label>
+                <select id="tipo-alquilados">
+                    <option value="todos">Todos</option>
+                    <option value="coche">Coche</option>
+                    <option value="moto">Moto</option>
+                    <option value="furgoneta">Furgoneta</option>
+                </select>
+            </div>
+            <div id="lista-alquilados" class="lista-vehiculos">
+                </div>
+            <div id="paginacion-alquilados" class="pagination">
+                </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+            <h3>Datos de contacto</h3>
+            <ul>
+                <li>Teléfono: +34 976 666 666</li>
+                <li>Email: info@alquicar.es</li>
+            </ul>
+        </section>
+
+        <section id="ubicacion">
+            <h2>Ubicación</h2>
+            <p>Visítanos en nuestra oficina:</p>
+            <p>Calle Jacinto Benavente, 3, 5006 Zaragoza, Aragón</p>
+            <p><a href="https://www.google.com/maps?q=Calle+Jacinto+Bnavente+6+Zaragoza" target="_blank">Ver en Google Maps</a></p>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulario de Contacto</h2>
+            <form id="miFormulario">
+                <div class="formulario-grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <div class="error-mensaje" id="error-nombre"></div>
+                </div>
+                <div class="formulario-grupo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-mensaje" id="error-email"></div>
+                </div>
+                <div class="formulario-grupo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <div class="error-mensaje" id="error-mensaje"></div>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+                <div id="mensaje-enviado" style="display:none; color: green; margin-top: 10px;">Mensaje enviado correctamente.</div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 AlquiCar</p>
+    </footer>
+    <script src="js/Fichas.js"></script>
+    <script src="js/Disponibles.js"></script>
+    <script src="js/Alquilados.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="js/script_principal.js"></script>
+
+</body>
+</html>
+
