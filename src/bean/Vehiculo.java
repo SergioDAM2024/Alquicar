@@ -1,5 +1,7 @@
 package bean;
-
+/**
+ * Aquí tenemos la clase asignada a la ficha de los vehículos
+ */
 public class Vehiculo {
     
     private int codigo;

@@ -12,7 +12,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.StringTokenizer;
 import javax.swing.JOptionPane;
-
+/**
+ * Clase para gestionar los alquileres
+ */
 public class ArregloBoleta {
     
     private ArrayList<Boleta> lista;

@@ -1,6 +1,8 @@
 
 package bean;
-
+/**
+ * Aquí tenemos la clase que indica la ficha de cliente
+ */
 public class Cliente {
     private int codigo;
     private String nombre;

@@ -9,7 +9,9 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 import javax.swing.JOptionPane;
-
+/**
+ * Similar a la clase anterior, aquí tenemos la clase que se encarga de la gestión de clientes.
+ */
 public class arreglo_Cliente {
 
     private ArrayList<Cliente> lista;

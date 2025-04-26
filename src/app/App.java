@@ -6,7 +6,9 @@
 package app;
 
 import vista.JFLogin;
-
+/**
+ * Clase que va a ejecutar la apliacación como tal
+ */
 public class App {
     
     public static void main(String[] args) 

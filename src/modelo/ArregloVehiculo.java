@@ -15,7 +15,9 @@ import java.util.StringTokenizer;
 import javax.swing.JOptionPane;
 
 public class ArregloVehiculo {
-
+/**
+ * Clase para la gestión del mantenimiento de los vehículos o la modificación de los mismos.
+ */
     private ArrayList<Vehiculo> lista;
 
     public ArregloVehiculo() {

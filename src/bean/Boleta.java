@@ -1,7 +1,9 @@
 package bean;
 
 import java.util.Date;
-
+/**
+ * En esta clase representamos la ficha de los alquileres que se van realizando
+ */
 public class Boleta {
     private int codigo;
     private String empleado, cliente, vehiculo, FechaInicio, FechaFinal;

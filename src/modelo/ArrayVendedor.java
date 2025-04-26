@@ -9,7 +9,9 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 import javax.swing.JOptionPane;
-
+/**
+ * Esta es la clase que se dedicará a gestionar los vendedores.
+ */
 public class ArrayVendedor {
 
     private ArrayList<Vendedor> vendedor ;

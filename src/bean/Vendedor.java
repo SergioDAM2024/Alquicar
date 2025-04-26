@@ -1,5 +1,7 @@
 package bean;
-
+/**
+ * Aquí tenemos la clase asignada a las fichas de los vendedores
+ */
 public class Vendedor {
 
     private int codigoVendedor;
